@@ -1,5 +1,6 @@
 $main-color: #2BB3B1;
 $secondary-color: #4BBEBC;
+$secondary-color-lt: #A5DFDE;
 $text-color: #BEDF33;
 $max-width: 700px;
 
@@ -19,7 +20,9 @@ body {
     grid-template-rows: repeat(1, 1fr);
     max-width: $max-width;
     margin: 30vh auto;
-
+    border-radius: 10px;
+    overflow: hidden;
+    
     .item {
         padding: 3rem;
         background: #f4f4f4;
@@ -33,11 +36,40 @@ body {
 
     .item-1 {
         color: $text-color;
+
+        h3 {
+            color: $secondary-color;
+        }
+
+        h2 {
+            font-size:16px;
+        }
+
+        p {
+            color: #BEBEBE;
+            font-size: 16px;
+        }
     }
 
     .item-2 {
         background: $main-color;
         color:#fff;
+
+        h2 {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        span {
+            font-size: 35px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
 
         .btn {
             display: inline-block;
@@ -63,8 +95,17 @@ body {
         background: $secondary-color;
         color: #fff;
 
+        h2 {
+            font-size: 16px;
+        }
+
         ul {
             list-style-type: none;
+
+            li {
+                color:$secondary-color-lt;
+                font-size: 16px;
+            }
         }
     }
 }
@@ -77,9 +118,19 @@ body {
         display: flex;
         flex-direction: column;
         margin: 30vw 18vh;
+        border-radius: 5px;
+        overflow: hidden;
 
         .item {
             width: 250px;
+        }
+
+        .item-1 {
+            border-top-right-radius: 5px;
+        }
+
+        .item-3 {
+            border-bottom-right-radius: 5px;
         }
     }
 }
