@@ -3,6 +3,7 @@ $secondary-color: #4BBEBC;
 $secondary-color-lt: #A5DFDE;
 $text-color: #BEDF33;
 $max-width: 700px;
+$margin: 1rem 0;
 
 * {
     margin: 0;
@@ -24,7 +25,7 @@ body {
     overflow: hidden;
     
     .item {
-        padding: 3rem;
+        padding: 2.5rem;
         background: #f4f4f4;
         font-size: 1.3rem;
     }
@@ -39,6 +40,7 @@ body {
 
         h3 {
             color: $secondary-color;
+            margin: $margin;
         }
 
         h2 {
@@ -117,7 +119,8 @@ body {
     .container {
         display: flex;
         flex-direction: column;
-        margin: 30vw 18vh;
+        margin: 20vw;
+        place-items: center;
         border-radius: 5px;
         overflow: hidden;
 
@@ -126,10 +129,12 @@ body {
         }
 
         .item-1 {
+            border-top-left-radius: 5px;
             border-top-right-radius: 5px;
         }
 
         .item-3 {
+            border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
         }
     }
